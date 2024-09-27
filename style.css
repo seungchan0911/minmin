@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'godoRoundedR';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2409-1@1.0/godoRoundedR.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TTLaundryGothicB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/TTLaundryGothicB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: inherit;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* object! */
+
+.bar {
+    width: 1.7px;
+    height: 12px;
+    background-color: lightgray;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.661);
+    z-index: 100;
+}
+
+.inner-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 100px);
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid gray;
+}
+
+.header__void-top {
+    width: 120px;
+    height: 1px;
+}
+
+.header__logo {
+    font-family: serif;
+    font-size: 48px;
+}
+
+.header__nav-top {
+    font-family: 'godoRoundedR';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    color: lightgray;
+    font-size: 18px;
+}
+
+.header__nav-top ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.bottom-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.header__nav-bottom {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header__nav-bottom ul {
+    font-family: 'TTLaundryGothicB';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 100px)
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 100px);
+}
+
+.inner-main {
+    font-family: 'TTLaundryGothicB';
+}
+
+.main__banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__banner img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+.main__banner-text {
+    line-height: 30px;
+}
+
+.main__banner-text {
+    line-height: 41px;
+}
+
+.main__img-group {
+    margin-top: 50px;
+}
+
+.main__img-group ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 2000px;
+}
+
+.main__img-group li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 250px;
+    overflow: hidden;
+    background-color: rgb(222, 222, 222);
+    border-radius: 10px;
+}
+
+.main__img-group img {
+    height: 100px;
+    scale: 300%;
+}
